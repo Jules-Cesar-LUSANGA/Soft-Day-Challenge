@@ -1,0 +1,43 @@
+<div class="modal fade" id="publishArticle" tabindex="-1" aria-labelledby="publishArticleTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="publishArticleTitle">Publier un arti le</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post" enctype="multipart/form-data">
+          <div class="form-group pt-2">
+            <label for="category">Catégorie</label>
+            <select class="form-control" name="category" id="category">
+              <option>Technologie</option>
+              <option>Sciences</option>
+              <option>Développement personnel</option>
+              <option>Conseils</option>
+              <option>Autres</option>
+            </select>
+          </div>
+          <div class="form-group pt-2">
+            <label for="article_title">Titre</label>
+            <input type="text" class="form-control" name="article_title" id="article_title" aria-describedby="helpId" placeholder="Ecrivez quelque chose !">
+          </div>
+          <div class="form-group pt-2">
+            <label for="img">Ajouter une image</label>
+            <input type="file" class="form-control-file" name="img" id="img">
+          </div>
+          <div class="form-group pt-2">
+            <label for="content">Contenu</label>
+            <textarea class="form-control wysiwyg" id="wysiwyg" name="content" cols="3" rows="3"></textarea>
+          </div>
+          <button type="submit" name="publishArticle" class="btn btn-primary">Publier l'article</button>
+      
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Publier</button>
+      </div>
+    </div>
+  </div>
+</div>
+
